@@ -15,6 +15,7 @@
 		D10759641F6C1B4900BF4BFF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D10759621F6C1B4900BF4BFF /* LaunchScreen.storyboard */; };
 		D107596F1F6C1B4900BF4BFF /* trivia_appTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D107596E1F6C1B4900BF4BFF /* trivia_appTests.swift */; };
 		D107597A1F6C1B4900BF4BFF /* trivia_appUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10759791F6C1B4900BF4BFF /* trivia_appUITests.swift */; };
+		D107598A1F6C205200BF4BFF /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10759891F6C205200BF4BFF /* GameViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		D10759751F6C1B4900BF4BFF /* trivia-appUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "trivia-appUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D10759791F6C1B4900BF4BFF /* trivia_appUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = trivia_appUITests.swift; sourceTree = "<group>"; };
 		D107597B1F6C1B4900BF4BFF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D10759891F6C205200BF4BFF /* GameViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +101,7 @@
 		D10759551F6C1B4900BF4BFF /* trivia-app */ = {
 			isa = PBXGroup;
 			children = (
+				D10759891F6C205200BF4BFF /* GameViewController.swift */,
 				D10759561F6C1B4900BF4BFF /* AppDelegate.swift */,
 				D10759581F6C1B4900BF4BFF /* ViewController.swift */,
 				D107595A1F6C1B4900BF4BFF /* Main.storyboard */,
@@ -262,6 +265,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D107598A1F6C205200BF4BFF /* GameViewController.swift in Sources */,
 				D10759591F6C1B4900BF4BFF /* ViewController.swift in Sources */,
 				D107595F1F6C1B4900BF4BFF /* trivia_app.xcdatamodeld in Sources */,
 				D10759571F6C1B4900BF4BFF /* AppDelegate.swift in Sources */,

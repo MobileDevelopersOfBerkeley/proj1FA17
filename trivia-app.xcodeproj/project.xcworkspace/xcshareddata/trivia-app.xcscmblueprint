@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "43AC3C8BE644CAFBCB71A7426A478963D4AB420C",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "4FD6D6256D8F38A158FE3BD51B9855E046832EFA" : 9223372036854775807,
+    "43AC3C8BE644CAFBCB71A7426A478963D4AB420C" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "CD9FCEF3-953E-4968-9A9F-159D56B5E550",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "4FD6D6256D8F38A158FE3BD51B9855E046832EFA" : "",
+    "43AC3C8BE644CAFBCB71A7426A478963D4AB420C" : "trivia-app\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "trivia-app",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "trivia-app.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anniewtang\/trivia-app.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "43AC3C8BE644CAFBCB71A7426A478963D4AB420C"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/anniewtang\/mobile-dev.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4FD6D6256D8F38A158FE3BD51B9855E046832EFA"
+    }
+  ]
+}
