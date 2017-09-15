@@ -21,6 +21,7 @@ class GameViewController: UIViewController {
     var choiceTwo: UIButton!
     var choiceThree: UIButton!
     var choiceFour: UIButton!
+    var correctChoice: UIButton!
     
     var imageArr: [UIImage]!
     var nameArr: [String]!
@@ -47,19 +48,18 @@ class GameViewController: UIViewController {
         view.addSubview(scoreLabel)
         
         randomPair = getImage()
-        memberName = randomPair.1
-        memberImage = UIImageView(frame: CGRect(x: view.frame.width * 0.375, y: view.frame.height * 0.35, width: view.frame.width * 0.25, height: view.frame.height * 0.25))
         memberImage.image = randomPair.0
+        memberName = randomPair.1
+        
         memberImage.contentMode = .scaleAspectFill
+        memberImage = UIImageView(frame: CGRect(x: view.frame.width * 0.375, y: view.frame.height * 0.35, width: view.frame.width * 0.25, height: view.frame.height * 0.25))
         view.addSubview(memberImage)
         
-        //        choiceOne.setTitle(memberName, for: .normal)
-        
-        setUpChoices()
+        initializeChoices()
         
     }
     
-    func setUpChoices() {
+    func initializeChoices() {
         choiceOne = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.6, width: view.frame.width * 0.7, height: 50))
         choiceTwo = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.65, width: view.frame.width * 0.7, height: 50))
         choiceThree = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.70, width: view.frame.width * 0.7, height: 50))
@@ -72,6 +72,25 @@ class GameViewController: UIViewController {
             choice.setTitleColor(darkBlue, for: .normal)
             view.addSubview(choice)
         }
+    }
+    
+    func populateChoices() {
+        var usedNames: [Int: String]!
+        
+        let imgRange: UInt32 = UInt32(4)
+        let correctNumber = Int(arc4random_uniform(imgRange))
+        usedNames[correctNumber] = memberName
+        
+        var randomNumber: Int!
+        for i in 0...3 {
+            if usedNames[i] != nil {
+                randomNumber = Int(arc4random_uniform(imgRange))
+                usedNames[i]
+                
+            }
+        }
+        
+        
     }
     
     func getImage() -> (UIImage, String) {
