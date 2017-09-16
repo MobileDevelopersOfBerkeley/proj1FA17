@@ -1,6 +1,2 @@
 # proj1FA17
-Repository for Spring 2017 MDB Android Training Program Mini-Project 4 Submissions
-
-Finalized mini-projects should be stored in personal portfolios, but this repository will be used for providing feedback on code quality using the GitHub code review features.
-
-When pushing code to this repo, DO NOT push to master. Create a new branch and open a pull request.
+This app is a trivia app for the MDB member names/images. It includes a 5 second timer for each question, flashing green/red color for each answers, a statistics page which includes the longest streak and the last three correct answers, a stop button that ends the game, a score counter, and a start game button/page.

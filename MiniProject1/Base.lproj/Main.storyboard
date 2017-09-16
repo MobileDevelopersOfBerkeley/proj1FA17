@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MiniProject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    </view>
+                    <connections>
+                        <segue destination="1p3-D7-kUA" kind="show" identifier="runGame" id="epv-a2-2Ff"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="114" y="37"/>
+        </scene>
+        <!--Game View Controller-->
+        <scene sceneID="tM8-oH-fwl">
+            <objects>
+                <viewController id="1p3-D7-kUA" customClass="GameViewController" customModule="MiniProject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lWn-0x-phF"/>
+                        <viewControllerLayoutGuide type="bottom" id="DQF-Dn-Rdh"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="0cn-nN-XBZ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="show" identifier="toStart" id="LwZ-Qb-DB8"/>
+                        <segue destination="uDO-9P-FT0" kind="show" identifier="toStats" id="3h7-8c-AP3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="r0y-LU-RAv" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="978" y="38"/>
+        </scene>
+        <!--Statistics View Controller-->
+        <scene sceneID="FNC-tE-Ksn">
+            <objects>
+                <viewController id="uDO-9P-FT0" customClass="StatisticsViewController" customModule="MiniProject1" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="tUW-2z-TsA"/>
+                        <viewControllerLayoutGuide type="bottom" id="Etu-Ca-mUg"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="aTU-5w-EEG">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="1p3-D7-kUA" kind="show" identifier="backtoGame" id="gCH-1r-asM"/>
+                        <segue destination="I82-jQ-V5S" kind="unwind" identifier="unwindToGame" unwindAction="unwindToGameWithSegue:" id="u3K-aY-2gd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="eZq-Dz-54O" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="I82-jQ-V5S" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="2142" y="38"/>
+        </scene>
+    </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="epv-a2-2Ff"/>
+    </inferredMetricsTieBreakers>
+</document>
