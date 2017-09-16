@@ -9,4 +9,4 @@ Features included:
 * There is a timer that only allows 5 seconds max for each member
 * User can go to stats screen to see streak, score, and last three answers (if they exist)
 
-![Screenshot](screenshot.jpg?raw=true "Main Menu"){:height="30%", width="30%"}
+![Screenshot](screenshot.jpg?raw=true "Main Menu": width=100)
