@@ -106,7 +106,6 @@ class GameViewController: UIViewController {
     
     func validateAnswer(sender: UIButton!) {
         let delayAnswerTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(displayAnswers)), userInfo: nil, repeats: false)
-        delayAnswerTimer.invalidate()
         if sender.tag == self.correctNumber {
             score += 1
             scoreLabel.text = "YOUR SCORE: \(score)"
@@ -125,20 +124,6 @@ class GameViewController: UIViewController {
         memberNumber = randomTuple.2
         
         populateChoices()
-    }
-    
-    func nextMember(sender: UIButton!) {
-        validateAnswer(sender: sender)
-        displayMember()
-    }
-    
-    
-    func correctTap(sender: UIButton!) {
-        score += 1
-        scoreLabel.text = "YOUR SCORE: \(score)"
-//        correctButton.backgroundColor = UIColor.green
-//        correctButton.layer.borderColor = UIColor.green.cgColor
-        nextMember(sender: sender)
     }
     
     /* creates a dictionary choiceNames to keep track of final buttons: memberNames
