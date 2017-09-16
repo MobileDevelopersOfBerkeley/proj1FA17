@@ -42,10 +42,37 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <segue destination="PI7-WS-f1p" kind="show" identifier="toEnd" id="vhw-Fu-brO"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6mv-Cq-UnL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="831" y="137"/>
         </scene>
+        <!--End View Controller-->
+        <scene sceneID="kVJ-Ed-Iyy">
+            <objects>
+                <viewController id="PI7-WS-f1p" customClass="EndViewController" customModule="trivia_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="zvU-Qb-A3l"/>
+                        <viewControllerLayoutGuide type="bottom" id="QiF-NF-33Z"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="P1v-d0-8mF" customClass="End">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <connections>
+                        <segue destination="NfX-WJ-MO1" kind="show" identifier="playAgain" id="fc3-jZ-fbI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="lto-rS-u0P" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1556" y="136"/>
+        </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="fc3-jZ-fbI"/>
+    </inferredMetricsTieBreakers>
 </document>

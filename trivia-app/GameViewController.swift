@@ -5,12 +5,13 @@ class GameViewController: UIViewController {
     let darkBlue: UIColor = UIColor(red:0.20, green:0.35, blue:0.52, alpha:1.0)
     let lightBlue: UIColor = UIColor(red:0.38, green:0.59, blue:0.83, alpha:1.0)
     let lightGray: UIColor = UIColor(red:0.97, green:0.97, blue:0.97, alpha:1.0)
-    var darkGrayBlue: UIColor = UIColor(red:0.19, green:0.24, blue:0.44, alpha:1.0)
+    let darkGrayBlue: UIColor = UIColor(red:0.19, green:0.24, blue:0.44, alpha:1.0)
     
     var score: Int = 0
     var scoreLabel: UILabel!
     
     var promptLabel: UILabel!
+    var stopButton: UIButton!
     
     var randomTuple: (UIImage, String, Int)!
     var memberImage: UIImageView!
@@ -23,49 +24,63 @@ class GameViewController: UIViewController {
     var choiceThree: UIButton!
     var choiceFour: UIButton!
     
-//    var correctChoice: UIButton!
-//    var currentChoice: UIButton!
-    
     var imageArr: [UIImage]!
     var nameArr: [String]!
+    
+    var currentButton: UIButton!
+    var correctButton: UIButton!
     
     override func viewDidLoad() {
         
         view.backgroundColor = lightGray
         setUpArrays()
         
-        promptLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height * 0.5))
+        promptLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height * 0.3))
         promptLabel.text = "Which member is this?"
         promptLabel.textColor = darkBlue
         promptLabel.textAlignment = .center
         promptLabel.font = UIFont(name: promptLabel.font.fontName, size: 30)
         view.addSubview(promptLabel)
         
+        stopButton = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.8, width: view.frame.width * 0.7, height: 50))
+        stopButton.setTitle("STOP", for: .normal)
+        stopButton.setTitleColor(darkGrayBlue, for: .normal)
+        stopButton.layer.borderWidth = 1
+        stopButton.layer.borderColor = darkGrayBlue.cgColor
+        stopButton.addTarget(self, action: #selector(endGame), for: .touchUpInside)
+        view.addSubview(stopButton)
         
-        scoreLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height * 0.6))
+        scoreLabel = UILabel(frame: CGRect(x: 0, y: 0, width: view.frame.width, height: view.frame.height * 0.4))
         scoreLabel.text = "YOUR SCORE: \(score)"
         scoreLabel.textAlignment = .center
         scoreLabel.textColor = darkGrayBlue
         scoreLabel.font = UIFont(name: scoreLabel.font.fontName, size: 20)
         view.addSubview(scoreLabel)
     
-        memberImage = UIImageView(frame: CGRect(x: view.frame.width * 0.375, y: view.frame.height * 0.35, width: view.frame.width * 0.25, height: view.frame.height * 0.25))
+        memberImage = UIImageView(frame: CGRect(x: view.frame.width * 0.375, y: view.frame.height * 0.25, width: view.frame.width * 0.25, height: view.frame.height * 0.25))
         view.addSubview(memberImage)
         
-        choiceOne = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.6, width: view.frame.width * 0.7, height: 50))
-        choiceTwo = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.65, width: view.frame.width * 0.7, height: 50))
-        choiceThree = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.70, width: view.frame.width * 0.7, height: 50))
-        choiceFour  = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.75, width: view.frame.width * 0.7, height: 50))
-        
+        choiceOne = UIButton(frame: CGRect(x: view.frame.width * 0.275, y: view.frame.height * 0.53, width: view.frame.width * 0.45, height: view.frame.height * 0.05))
+        choiceTwo = UIButton(frame: CGRect(x: view.frame.width * 0.275, y: view.frame.height * 0.59, width: view.frame.width * 0.45, height: view.frame.height * 0.05))
+        choiceThree = UIButton(frame: CGRect(x: view.frame.width * 0.275, y: view.frame.height * 0.65, width: view.frame.width * 0.45, height: view.frame.height * 0.05))
+        choiceFour  = UIButton(frame: CGRect(x: view.frame.width * 0.275, y: view.frame.height * 0.71, width: view.frame.width * 0.45, height: view.frame.height * 0.05))
         choiceArr = [choiceOne, choiceTwo, choiceThree, choiceFour]
         for i in 0 ..< 4 {
             let choice: UIButton = choiceArr[i]
             choice.setTitleColor(darkGrayBlue, for: .normal)
+            choice.layer.borderWidth = 1
+            choice.layer.borderColor = darkGrayBlue.cgColor
+            choice.layer.cornerRadius = 8
             view.addSubview(choice)
         }
+        
         nextMember()
     }
     
+    func endGame() {
+        stopButton.backgroundColor = lightBlue
+        self.performSegue(withIdentifier: "toEnd", sender: self)
+    }
     
     func nextMember() {
         randomTuple = getImage()
@@ -75,15 +90,15 @@ class GameViewController: UIViewController {
         
         memberName = randomTuple.1
         memberNumber = randomTuple.2
-        scoreLabel.text = "YOUR SCORE: \(score)"
-
+        
         populateChoices()
     }
     
     func correctTap() {
-        print("INCREMENTED")
         score += 1
         scoreLabel.text = "YOUR SCORE: \(score)"
+//        correctButton.backgroundColor = UIColor.green
+//        correctButton.layer.borderColor = UIColor.green.cgColor
         nextMember()
     }
     
@@ -98,23 +113,18 @@ class GameViewController: UIViewController {
         var usedImgNumbers = [Int]()
         
         let correctNumber = Int(arc4random_uniform(UInt32(4)))
-        print("correctNumber: ", correctNumber)
         choiceNames[correctNumber] = memberName
         usedImgNumbers.append(memberNumber)
         
         var randomNumber: Int!
         let imgRange: UInt32 = UInt32(imageArr.count)
         
-        
-        
         for i in 0...3 {
             if choiceNames[i] == nil {
-//                print(i)
                 randomNumber = Int(arc4random_uniform(imgRange))
                 while usedImgNumbers.contains(randomNumber) {
                     randomNumber = Int(arc4random_uniform(imgRange))
                 }
-//                print("random number: \(randomNumber)")
                 choiceNames[i] = nameArr[randomNumber]
                 usedImgNumbers.append(randomNumber)
             }
@@ -124,17 +134,13 @@ class GameViewController: UIViewController {
             let choice = choiceArr[i]
             choice.setTitle(name, for: .normal)
             choice.removeTarget(nil, action: nil, for: .allEvents)
-//            print(i, name, correctNumber)
             if i == correctNumber {
-//                print("correct: ", i)
                 choice.addTarget(self, action: #selector(correctTap), for: .touchUpInside)
+                correctButton = choice
             } else {
-//                print("incorrect: ", i)
                 choice.addTarget(self, action: #selector(nextMember), for: .touchUpInside)
             }
         }
-        
-        
     }
     
     func getImage() -> (UIImage, String, Int) {
