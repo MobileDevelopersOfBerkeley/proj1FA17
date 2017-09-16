@@ -8,3 +8,5 @@ Features included:
 * For each correct, game keeps track of score as well as longest streak
 * There is a timer that only allows 5 seconds max for each member
 * User can go to stats screen to see streak, score, and last three answers (if they exist)
+
+![Screenshot](screenshot.jpg?raw=true "Main Menu")
