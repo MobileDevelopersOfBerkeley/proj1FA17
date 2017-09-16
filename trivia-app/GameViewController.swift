@@ -17,6 +17,7 @@ class GameViewController: UIViewController {
     var memberImage: UIImageView!
     var memberName: String!
     var memberNumber: Int!
+    var correctNumber: Int!
     
     var choiceArr: [UIButton]!
     var choiceOne: UIButton!
@@ -27,8 +28,7 @@ class GameViewController: UIViewController {
     var imageArr: [UIImage]!
     var nameArr: [String]!
     
-    var currentButton: UIButton!
-    var correctButton: UIButton!
+    
     
     override func viewDidLoad() {
         
@@ -42,7 +42,7 @@ class GameViewController: UIViewController {
         promptLabel.font = UIFont(name: promptLabel.font.fontName, size: 30)
         view.addSubview(promptLabel)
         
-        stopButton = UIButton(frame: CGRect(x: view.frame.width * 0.15, y: view.frame.height * 0.8, width: view.frame.width * 0.7, height: 50))
+        stopButton = UIButton(frame: CGRect(x: view.frame.width * 0.275, y: view.frame.height * 0.8, width: view.frame.width * 0.45, height: 50))
         stopButton.setTitle("STOP", for: .normal)
         stopButton.setTitleColor(darkGrayBlue, for: .normal)
         stopButton.layer.borderWidth = 1
@@ -67,22 +67,55 @@ class GameViewController: UIViewController {
         choiceArr = [choiceOne, choiceTwo, choiceThree, choiceFour]
         for i in 0 ..< 4 {
             let choice: UIButton = choiceArr[i]
-            choice.setTitleColor(darkGrayBlue, for: .normal)
-            choice.layer.borderWidth = 1
-            choice.layer.borderColor = darkGrayBlue.cgColor
+            choice.setTitleColor(UIColor.white, for: .normal)
+            choice.titleLabel?.font = UIFont(name: scoreLabel.font.fontName, size: 12)
+            choice.backgroundColor = lightBlue
             choice.layer.cornerRadius = 8
+            choice.tag = i
             view.addSubview(choice)
         }
         
-        nextMember()
+        startGame()
+        
+    }
+
+    func displayAnswers() {
+        for choice in choiceArr {
+            if choice.tag == correctNumber {
+                choice.backgroundColor = UIColor.green
+            } else {
+                choice.backgroundColor = UIColor.red
+            }
+        }
+        startGame()
     }
     
-    func endGame() {
-        stopButton.backgroundColor = lightBlue
-        self.performSegue(withIdentifier: "toEnd", sender: self)
+    func startGame() {
+        displayMember()
+        var  displayAnswerTimer = Timer.scheduledTimer(
+            timeInterval: 5,
+            target: self,
+            selector: (#selector(displayAnswers)),
+            userInfo: nil,
+            repeats: false)
+//        displayAnswerTimer.invalidate()
+//        startGame()
+
+        
     }
     
-    func nextMember() {
+    func validateAnswer(sender: UIButton!) {
+        let delayAnswerTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(displayAnswers)), userInfo: nil, repeats: false)
+        delayAnswerTimer.invalidate()
+        if sender.tag == self.correctNumber {
+            score += 1
+            scoreLabel.text = "YOUR SCORE: \(score)"
+        }
+        
+    }
+    
+
+    func displayMember() {
         randomTuple = getImage()
         
         memberImage.image = randomTuple.0
@@ -94,12 +127,18 @@ class GameViewController: UIViewController {
         populateChoices()
     }
     
-    func correctTap() {
+    func nextMember(sender: UIButton!) {
+        validateAnswer(sender: sender)
+        displayMember()
+    }
+    
+    
+    func correctTap(sender: UIButton!) {
         score += 1
         scoreLabel.text = "YOUR SCORE: \(score)"
 //        correctButton.backgroundColor = UIColor.green
 //        correctButton.layer.borderColor = UIColor.green.cgColor
-        nextMember()
+        nextMember(sender: sender)
     }
     
     /* creates a dictionary choiceNames to keep track of final buttons: memberNames
@@ -112,7 +151,7 @@ class GameViewController: UIViewController {
         var choiceNames = [Int: String]()
         var usedImgNumbers = [Int]()
         
-        let correctNumber = Int(arc4random_uniform(UInt32(4)))
+        correctNumber = Int(arc4random_uniform(UInt32(4)))
         choiceNames[correctNumber] = memberName
         usedImgNumbers.append(memberNumber)
         
@@ -135,11 +174,11 @@ class GameViewController: UIViewController {
             choice.setTitle(name, for: .normal)
             choice.removeTarget(nil, action: nil, for: .allEvents)
             if i == correctNumber {
-                choice.addTarget(self, action: #selector(correctTap), for: .touchUpInside)
-                correctButton = choice
+                choice.addTarget(self, action: #selector(validateAnswer(sender:)), for: .touchUpInside)
             } else {
-                choice.addTarget(self, action: #selector(nextMember), for: .touchUpInside)
+                choice.addTarget(self, action: #selector(validateAnswer(sender:)), for: .touchUpInside)
             }
+            choice.backgroundColor = lightBlue
         }
     }
     
@@ -156,6 +195,12 @@ class GameViewController: UIViewController {
         imageArr = [#imageLiteral(resourceName: "aayushtyagi"), #imageLiteral(resourceName: "abhinavkoppu"), #imageLiteral(resourceName: "adhirajdatar"), #imageLiteral(resourceName: "akkshaykhoslaa"), #imageLiteral(resourceName: "amyshen"), #imageLiteral(resourceName: "aneeshjindal"), #imageLiteral(resourceName: "ashwinvaidyanathan"), #imageLiteral(resourceName: "bengoldberg"), #imageLiteral(resourceName: "billylu"), #imageLiteral(resourceName: "borisyue"), #imageLiteral(resourceName: "candiceye"), #imageLiteral(resourceName: "codyhsieh"), #imageLiteral(resourceName: "danielandrews"), #imageLiteral(resourceName: "edwardliu"), #imageLiteral(resourceName: "eliothan"), #imageLiteral(resourceName: "emaanhariri"), #imageLiteral(resourceName: "erickong"), #imageLiteral(resourceName: "jaredgutierrez"), #imageLiteral(resourceName: "jeffreyzhang"), #imageLiteral(resourceName: "jessicachen"), #imageLiteral(resourceName: "julialuo"), #imageLiteral(resourceName: "justinkim"), #imageLiteral(resourceName: "kevinjiang"), #imageLiteral(resourceName: "krishnanrajiyah"), #imageLiteral(resourceName: "kristinho"), #imageLiteral(resourceName: "leonkwak"), #imageLiteral(resourceName: "leviwalsh"), #imageLiteral(resourceName: "mohitkatyal"), #imageLiteral(resourceName: "muditmittal"), #imageLiteral(resourceName: "peterschafhalter"), #imageLiteral(resourceName: "radhikadhomse"), #imageLiteral(resourceName: "rochelleshen"), #imageLiteral(resourceName: "sahillamba"), #imageLiteral(resourceName: "sarahtang"), #imageLiteral(resourceName: "sayanpaul"), #imageLiteral(resourceName: "shariewang"), #imageLiteral(resourceName: "shivkushwah"), #imageLiteral(resourceName: "shreyareddy"),#imageLiteral(resourceName: "shubhamgoenka"), #imageLiteral(resourceName: "sumukhshivakumar"), #imageLiteral(resourceName: "tarunkhasnavis"), #imageLiteral(resourceName: "victorsun"), #imageLiteral(resourceName: "vidyaravikumar"), #imageLiteral(resourceName: "wilburshi"), #imageLiteral(resourceName: "younglin"), #imageLiteral(resourceName: "zachgovani")]
         
         nameArr = ["Aayush Tyagi", "Abhinav Koppu", "Adhiraj Datar", "Akkshay Khoslaa", "Amy Shen", "Aneesh Jindal", "Ashwin Vaidyanathan", "Ben Goldberg", "Billy Lu", "Boris Yue", "Candice Ye", "Cody Hsieh", "Daniel Andrews", "Edward Liu", "Eliot Han", "Emaan Hariri", "Eric Kong", "Jared Gutierrez", "Jeffrey Zhang", "Jessica Chen", "Julia Luo", "Justin Kim", "Kevin Jiang", "Krishnan Rajiyah", "Kristin Ho", "Leon Kwak", "Levi Walsh", "Mohit Katyal", "Mudit Mittal", "Peter Schafhalter", "Radhika Dhomse", "Rochelle Shen", "Sahil Lamba", "Sarah Tang", "Sayan Paul", "Sharie Wang", "Shiv Kushwah", "Shreya Reddy", "Shubham Goenka", "Sumukh Shivakumar", "Tarun Khasnavis", "Victor Sun", "Vidya Ravikumar", "Wilbur Shi", "Young Lin", "Zach Govani"];
-
-        }
     }
+    
+    func endGame() {
+        stopButton.backgroundColor = lightBlue
+        self.performSegue(withIdentifier: "toEnd", sender: self)
+    }
+}
+
+
