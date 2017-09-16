@@ -106,6 +106,7 @@ class GameViewController: UIViewController {
     
     func validateAnswer(sender: UIButton!) {
         let delayAnswerTimer = Timer.scheduledTimer(timeInterval: 1, target: self, selector: (#selector(displayAnswers)), userInfo: nil, repeats: false)
+    
         if sender.tag == self.correctNumber {
             score += 1
             scoreLabel.text = "YOUR SCORE: \(score)"
