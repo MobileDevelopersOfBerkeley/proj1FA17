@@ -1,0 +1,726 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B3F308A21F6C96950008FCAB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F308A11F6C96950008FCAB /* AppDelegate.swift */; };
+		B3F308A41F6C96950008FCAB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F308A31F6C96950008FCAB /* ViewController.swift */; };
+		B3F308A71F6C96950008FCAB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F308A51F6C96950008FCAB /* Main.storyboard */; };
+		B3F308A91F6C96950008FCAB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B3F308A81F6C96950008FCAB /* Assets.xcassets */; };
+		B3F308AC1F6C96950008FCAB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B3F308AA1F6C96950008FCAB /* LaunchScreen.storyboard */; };
+		B3F308B71F6C96950008FCAB /* MDB_TriviaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F308B61F6C96950008FCAB /* MDB_TriviaTests.swift */; };
+		B3F308C21F6C96950008FCAB /* MDB_TriviaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F308C11F6C96950008FCAB /* MDB_TriviaUITests.swift */; };
+		B3F308D21F6C99AE0008FCAB /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3F308D11F6C99AE0008FCAB /* Question.swift */; };
+		B3F309021F6C9DFA0008FCAB /* aayushtyagi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D41F6C9DFA0008FCAB /* aayushtyagi.jpg */; };
+		B3F309031F6C9DFA0008FCAB /* abhinavkoppu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D51F6C9DFA0008FCAB /* abhinavkoppu.jpg */; };
+		B3F309041F6C9DFA0008FCAB /* adhirajdatar.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D61F6C9DFA0008FCAB /* adhirajdatar.png */; };
+		B3F309051F6C9DFA0008FCAB /* akkshaykhoslaa.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D71F6C9DFA0008FCAB /* akkshaykhoslaa.png */; };
+		B3F309061F6C9DFA0008FCAB /* amyshen.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D81F6C9DFA0008FCAB /* amyshen.png */; };
+		B3F309071F6C9DFA0008FCAB /* aneeshjindal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308D91F6C9DFA0008FCAB /* aneeshjindal.jpg */; };
+		B3F309081F6C9DFA0008FCAB /* ashwinvaidyanathan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DA1F6C9DFA0008FCAB /* ashwinvaidyanathan.jpg */; };
+		B3F309091F6C9DFA0008FCAB /* bengoldberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DB1F6C9DFA0008FCAB /* bengoldberg.jpg */; };
+		B3F3090A1F6C9DFA0008FCAB /* billylu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DC1F6C9DFA0008FCAB /* billylu.jpg */; };
+		B3F3090B1F6C9DFA0008FCAB /* borisyue.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DD1F6C9DFA0008FCAB /* borisyue.png */; };
+		B3F3090C1F6C9DFA0008FCAB /* candiceye.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DE1F6C9DFA0008FCAB /* candiceye.jpg */; };
+		B3F3090D1F6C9DFA0008FCAB /* codyhsieh.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308DF1F6C9DFA0008FCAB /* codyhsieh.png */; };
+		B3F3090E1F6C9DFA0008FCAB /* danielandrews.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E01F6C9DFA0008FCAB /* danielandrews.png */; };
+		B3F3090F1F6C9DFA0008FCAB /* edwardliu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E11F6C9DFA0008FCAB /* edwardliu.jpg */; };
+		B3F309101F6C9DFA0008FCAB /* eliothan.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E21F6C9DFA0008FCAB /* eliothan.jpg */; };
+		B3F309111F6C9DFA0008FCAB /* emaanhariri.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E31F6C9DFA0008FCAB /* emaanhariri.jpg */; };
+		B3F309121F6C9DFA0008FCAB /* erickong.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E41F6C9DFA0008FCAB /* erickong.png */; };
+		B3F309131F6C9DFA0008FCAB /* jaredgutierrez.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E51F6C9DFA0008FCAB /* jaredgutierrez.jpg */; };
+		B3F309141F6C9DFA0008FCAB /* jeffreyzhang.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E61F6C9DFA0008FCAB /* jeffreyzhang.png */; };
+		B3F309151F6C9DFA0008FCAB /* jessicachen.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E71F6C9DFA0008FCAB /* jessicachen.jpg */; };
+		B3F309161F6C9DFA0008FCAB /* julialuo.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E81F6C9DFA0008FCAB /* julialuo.png */; };
+		B3F309171F6C9DFA0008FCAB /* justinkim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308E91F6C9DFA0008FCAB /* justinkim.jpg */; };
+		B3F309181F6C9DFA0008FCAB /* kevinjiang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308EA1F6C9DFA0008FCAB /* kevinjiang.jpg */; };
+		B3F309191F6C9DFA0008FCAB /* krishnanrajiyah.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308EB1F6C9DFA0008FCAB /* krishnanrajiyah.jpg */; };
+		B3F3091A1F6C9DFA0008FCAB /* kristinho.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308EC1F6C9DFA0008FCAB /* kristinho.jpg */; };
+		B3F3091B1F6C9DFA0008FCAB /* leonkwak.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308ED1F6C9DFA0008FCAB /* leonkwak.png */; };
+		B3F3091C1F6C9DFA0008FCAB /* leviwalsh.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308EE1F6C9DFA0008FCAB /* leviwalsh.png */; };
+		B3F3091D1F6C9DFA0008FCAB /* mohitkatyal.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308EF1F6C9DFA0008FCAB /* mohitkatyal.png */; };
+		B3F3091E1F6C9DFA0008FCAB /* muditmittal.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F01F6C9DFA0008FCAB /* muditmittal.jpg */; };
+		B3F3091F1F6C9DFA0008FCAB /* peterschafhalter.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F11F6C9DFA0008FCAB /* peterschafhalter.jpg */; };
+		B3F309201F6C9DFA0008FCAB /* radhikadhomse.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F21F6C9DFA0008FCAB /* radhikadhomse.png */; };
+		B3F309211F6C9DFA0008FCAB /* rochelleshen.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F31F6C9DFA0008FCAB /* rochelleshen.png */; };
+		B3F309221F6C9DFA0008FCAB /* sahillamba.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F41F6C9DFA0008FCAB /* sahillamba.png */; };
+		B3F309231F6C9DFA0008FCAB /* sarahtang.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F51F6C9DFA0008FCAB /* sarahtang.png */; };
+		B3F309241F6C9DFA0008FCAB /* sayanpaul.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F61F6C9DFA0008FCAB /* sayanpaul.jpg */; };
+		B3F309251F6C9DFA0008FCAB /* shariewang.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F71F6C9DFA0008FCAB /* shariewang.jpg */; };
+		B3F309261F6C9DFA0008FCAB /* shivkushwah.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F81F6C9DFA0008FCAB /* shivkushwah.png */; };
+		B3F309271F6C9DFA0008FCAB /* shreyareddy.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308F91F6C9DFA0008FCAB /* shreyareddy.jpg */; };
+		B3F309281F6C9DFA0008FCAB /* shubhamgoenka.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FA1F6C9DFA0008FCAB /* shubhamgoenka.jpg */; };
+		B3F309291F6C9DFA0008FCAB /* sumukhshivakumar.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FB1F6C9DFA0008FCAB /* sumukhshivakumar.png */; };
+		B3F3092A1F6C9DFA0008FCAB /* tarunkhasnavis.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FC1F6C9DFA0008FCAB /* tarunkhasnavis.png */; };
+		B3F3092B1F6C9DFA0008FCAB /* victorsun.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FD1F6C9DFA0008FCAB /* victorsun.jpg */; };
+		B3F3092C1F6C9DFA0008FCAB /* vidyaravikumar.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FE1F6C9DFA0008FCAB /* vidyaravikumar.jpg */; };
+		B3F3092D1F6C9DFA0008FCAB /* wilburshi.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F308FF1F6C9DFA0008FCAB /* wilburshi.jpg */; };
+		B3F3092E1F6C9DFA0008FCAB /* younglin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = B3F309001F6C9DFA0008FCAB /* younglin.jpg */; };
+		B3F3092F1F6C9DFA0008FCAB /* zachgovani.png in Resources */ = {isa = PBXBuildFile; fileRef = B3F309011F6C9DFA0008FCAB /* zachgovani.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B3F308B31F6C96950008FCAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F308961F6C96950008FCAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F3089D1F6C96950008FCAB;
+			remoteInfo = "MDB Trivia";
+		};
+		B3F308BE1F6C96950008FCAB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B3F308961F6C96950008FCAB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B3F3089D1F6C96950008FCAB;
+			remoteInfo = "MDB Trivia";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		B3F3089E1F6C96950008FCAB /* MDB Trivia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDB Trivia.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F308A11F6C96950008FCAB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B3F308A31F6C96950008FCAB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B3F308A61F6C96950008FCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		B3F308A81F6C96950008FCAB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B3F308AB1F6C96950008FCAB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		B3F308AD1F6C96950008FCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F308B21F6C96950008FCAB /* MDB TriviaTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDB TriviaTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F308B61F6C96950008FCAB /* MDB_TriviaTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDB_TriviaTests.swift; sourceTree = "<group>"; };
+		B3F308B81F6C96950008FCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F308BD1F6C96950008FCAB /* MDB TriviaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MDB TriviaUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B3F308C11F6C96950008FCAB /* MDB_TriviaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDB_TriviaUITests.swift; sourceTree = "<group>"; };
+		B3F308C31F6C96950008FCAB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3F308D11F6C99AE0008FCAB /* Question.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		B3F308D41F6C9DFA0008FCAB /* aayushtyagi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aayushtyagi.jpg; sourceTree = "<group>"; };
+		B3F308D51F6C9DFA0008FCAB /* abhinavkoppu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = abhinavkoppu.jpg; sourceTree = "<group>"; };
+		B3F308D61F6C9DFA0008FCAB /* adhirajdatar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = adhirajdatar.png; sourceTree = "<group>"; };
+		B3F308D71F6C9DFA0008FCAB /* akkshaykhoslaa.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = akkshaykhoslaa.png; sourceTree = "<group>"; };
+		B3F308D81F6C9DFA0008FCAB /* amyshen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = amyshen.png; sourceTree = "<group>"; };
+		B3F308D91F6C9DFA0008FCAB /* aneeshjindal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = aneeshjindal.jpg; sourceTree = "<group>"; };
+		B3F308DA1F6C9DFA0008FCAB /* ashwinvaidyanathan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = ashwinvaidyanathan.jpg; sourceTree = "<group>"; };
+		B3F308DB1F6C9DFA0008FCAB /* bengoldberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bengoldberg.jpg; sourceTree = "<group>"; };
+		B3F308DC1F6C9DFA0008FCAB /* billylu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = billylu.jpg; sourceTree = "<group>"; };
+		B3F308DD1F6C9DFA0008FCAB /* borisyue.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = borisyue.png; sourceTree = "<group>"; };
+		B3F308DE1F6C9DFA0008FCAB /* candiceye.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = candiceye.jpg; sourceTree = "<group>"; };
+		B3F308DF1F6C9DFA0008FCAB /* codyhsieh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = codyhsieh.png; sourceTree = "<group>"; };
+		B3F308E01F6C9DFA0008FCAB /* danielandrews.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = danielandrews.png; sourceTree = "<group>"; };
+		B3F308E11F6C9DFA0008FCAB /* edwardliu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = edwardliu.jpg; sourceTree = "<group>"; };
+		B3F308E21F6C9DFA0008FCAB /* eliothan.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = eliothan.jpg; sourceTree = "<group>"; };
+		B3F308E31F6C9DFA0008FCAB /* emaanhariri.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = emaanhariri.jpg; sourceTree = "<group>"; };
+		B3F308E41F6C9DFA0008FCAB /* erickong.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = erickong.png; sourceTree = "<group>"; };
+		B3F308E51F6C9DFA0008FCAB /* jaredgutierrez.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jaredgutierrez.jpg; sourceTree = "<group>"; };
+		B3F308E61F6C9DFA0008FCAB /* jeffreyzhang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = jeffreyzhang.png; sourceTree = "<group>"; };
+		B3F308E71F6C9DFA0008FCAB /* jessicachen.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = jessicachen.jpg; sourceTree = "<group>"; };
+		B3F308E81F6C9DFA0008FCAB /* julialuo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = julialuo.png; sourceTree = "<group>"; };
+		B3F308E91F6C9DFA0008FCAB /* justinkim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = justinkim.jpg; sourceTree = "<group>"; };
+		B3F308EA1F6C9DFA0008FCAB /* kevinjiang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kevinjiang.jpg; sourceTree = "<group>"; };
+		B3F308EB1F6C9DFA0008FCAB /* krishnanrajiyah.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = krishnanrajiyah.jpg; sourceTree = "<group>"; };
+		B3F308EC1F6C9DFA0008FCAB /* kristinho.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = kristinho.jpg; sourceTree = "<group>"; };
+		B3F308ED1F6C9DFA0008FCAB /* leonkwak.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leonkwak.png; sourceTree = "<group>"; };
+		B3F308EE1F6C9DFA0008FCAB /* leviwalsh.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leviwalsh.png; sourceTree = "<group>"; };
+		B3F308EF1F6C9DFA0008FCAB /* mohitkatyal.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mohitkatyal.png; sourceTree = "<group>"; };
+		B3F308F01F6C9DFA0008FCAB /* muditmittal.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = muditmittal.jpg; sourceTree = "<group>"; };
+		B3F308F11F6C9DFA0008FCAB /* peterschafhalter.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = peterschafhalter.jpg; sourceTree = "<group>"; };
+		B3F308F21F6C9DFA0008FCAB /* radhikadhomse.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = radhikadhomse.png; sourceTree = "<group>"; };
+		B3F308F31F6C9DFA0008FCAB /* rochelleshen.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = rochelleshen.png; sourceTree = "<group>"; };
+		B3F308F41F6C9DFA0008FCAB /* sahillamba.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sahillamba.png; sourceTree = "<group>"; };
+		B3F308F51F6C9DFA0008FCAB /* sarahtang.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sarahtang.png; sourceTree = "<group>"; };
+		B3F308F61F6C9DFA0008FCAB /* sayanpaul.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sayanpaul.jpg; sourceTree = "<group>"; };
+		B3F308F71F6C9DFA0008FCAB /* shariewang.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shariewang.jpg; sourceTree = "<group>"; };
+		B3F308F81F6C9DFA0008FCAB /* shivkushwah.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shivkushwah.png; sourceTree = "<group>"; };
+		B3F308F91F6C9DFA0008FCAB /* shreyareddy.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shreyareddy.jpg; sourceTree = "<group>"; };
+		B3F308FA1F6C9DFA0008FCAB /* shubhamgoenka.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = shubhamgoenka.jpg; sourceTree = "<group>"; };
+		B3F308FB1F6C9DFA0008FCAB /* sumukhshivakumar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = sumukhshivakumar.png; sourceTree = "<group>"; };
+		B3F308FC1F6C9DFA0008FCAB /* tarunkhasnavis.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = tarunkhasnavis.png; sourceTree = "<group>"; };
+		B3F308FD1F6C9DFA0008FCAB /* victorsun.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = victorsun.jpg; sourceTree = "<group>"; };
+		B3F308FE1F6C9DFA0008FCAB /* vidyaravikumar.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = vidyaravikumar.jpg; sourceTree = "<group>"; };
+		B3F308FF1F6C9DFA0008FCAB /* wilburshi.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wilburshi.jpg; sourceTree = "<group>"; };
+		B3F309001F6C9DFA0008FCAB /* younglin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = younglin.jpg; sourceTree = "<group>"; };
+		B3F309011F6C9DFA0008FCAB /* zachgovani.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = zachgovani.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B3F3089B1F6C96950008FCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308AF1F6C96950008FCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308BA1F6C96950008FCAB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		B3F308951F6C96950008FCAB = {
+			isa = PBXGroup;
+			children = (
+				B3F308A01F6C96950008FCAB /* MDB Trivia */,
+				B3F308B51F6C96950008FCAB /* MDB TriviaTests */,
+				B3F308C01F6C96950008FCAB /* MDB TriviaUITests */,
+				B3F3089F1F6C96950008FCAB /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		B3F3089F1F6C96950008FCAB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B3F3089E1F6C96950008FCAB /* MDB Trivia.app */,
+				B3F308B21F6C96950008FCAB /* MDB TriviaTests.xctest */,
+				B3F308BD1F6C96950008FCAB /* MDB TriviaUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B3F308A01F6C96950008FCAB /* MDB Trivia */ = {
+			isa = PBXGroup;
+			children = (
+				B3F309311F6C9E1A0008FCAB /* memberPhotos */,
+				B3F308A11F6C96950008FCAB /* AppDelegate.swift */,
+				B3F308A31F6C96950008FCAB /* ViewController.swift */,
+				B3F308D11F6C99AE0008FCAB /* Question.swift */,
+				B3F308A51F6C96950008FCAB /* Main.storyboard */,
+				B3F308A81F6C96950008FCAB /* Assets.xcassets */,
+				B3F308AA1F6C96950008FCAB /* LaunchScreen.storyboard */,
+				B3F308AD1F6C96950008FCAB /* Info.plist */,
+			);
+			path = "MDB Trivia";
+			sourceTree = "<group>";
+		};
+		B3F308B51F6C96950008FCAB /* MDB TriviaTests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F308B61F6C96950008FCAB /* MDB_TriviaTests.swift */,
+				B3F308B81F6C96950008FCAB /* Info.plist */,
+			);
+			path = "MDB TriviaTests";
+			sourceTree = "<group>";
+		};
+		B3F308C01F6C96950008FCAB /* MDB TriviaUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B3F308C11F6C96950008FCAB /* MDB_TriviaUITests.swift */,
+				B3F308C31F6C96950008FCAB /* Info.plist */,
+			);
+			path = "MDB TriviaUITests";
+			sourceTree = "<group>";
+		};
+		B3F309311F6C9E1A0008FCAB /* memberPhotos */ = {
+			isa = PBXGroup;
+			children = (
+				B3F308D41F6C9DFA0008FCAB /* aayushtyagi.jpg */,
+				B3F308D51F6C9DFA0008FCAB /* abhinavkoppu.jpg */,
+				B3F308D61F6C9DFA0008FCAB /* adhirajdatar.png */,
+				B3F308D71F6C9DFA0008FCAB /* akkshaykhoslaa.png */,
+				B3F308D81F6C9DFA0008FCAB /* amyshen.png */,
+				B3F308D91F6C9DFA0008FCAB /* aneeshjindal.jpg */,
+				B3F308DA1F6C9DFA0008FCAB /* ashwinvaidyanathan.jpg */,
+				B3F308DB1F6C9DFA0008FCAB /* bengoldberg.jpg */,
+				B3F308DC1F6C9DFA0008FCAB /* billylu.jpg */,
+				B3F308DD1F6C9DFA0008FCAB /* borisyue.png */,
+				B3F308DE1F6C9DFA0008FCAB /* candiceye.jpg */,
+				B3F308DF1F6C9DFA0008FCAB /* codyhsieh.png */,
+				B3F308E01F6C9DFA0008FCAB /* danielandrews.png */,
+				B3F308E11F6C9DFA0008FCAB /* edwardliu.jpg */,
+				B3F308E21F6C9DFA0008FCAB /* eliothan.jpg */,
+				B3F308E31F6C9DFA0008FCAB /* emaanhariri.jpg */,
+				B3F308E41F6C9DFA0008FCAB /* erickong.png */,
+				B3F308E51F6C9DFA0008FCAB /* jaredgutierrez.jpg */,
+				B3F308E61F6C9DFA0008FCAB /* jeffreyzhang.png */,
+				B3F308E71F6C9DFA0008FCAB /* jessicachen.jpg */,
+				B3F308E81F6C9DFA0008FCAB /* julialuo.png */,
+				B3F308E91F6C9DFA0008FCAB /* justinkim.jpg */,
+				B3F308EA1F6C9DFA0008FCAB /* kevinjiang.jpg */,
+				B3F308EB1F6C9DFA0008FCAB /* krishnanrajiyah.jpg */,
+				B3F308EC1F6C9DFA0008FCAB /* kristinho.jpg */,
+				B3F308ED1F6C9DFA0008FCAB /* leonkwak.png */,
+				B3F308EE1F6C9DFA0008FCAB /* leviwalsh.png */,
+				B3F308EF1F6C9DFA0008FCAB /* mohitkatyal.png */,
+				B3F308F01F6C9DFA0008FCAB /* muditmittal.jpg */,
+				B3F308F11F6C9DFA0008FCAB /* peterschafhalter.jpg */,
+				B3F308F21F6C9DFA0008FCAB /* radhikadhomse.png */,
+				B3F308F31F6C9DFA0008FCAB /* rochelleshen.png */,
+				B3F308F41F6C9DFA0008FCAB /* sahillamba.png */,
+				B3F308F51F6C9DFA0008FCAB /* sarahtang.png */,
+				B3F308F61F6C9DFA0008FCAB /* sayanpaul.jpg */,
+				B3F308F71F6C9DFA0008FCAB /* shariewang.jpg */,
+				B3F308F81F6C9DFA0008FCAB /* shivkushwah.png */,
+				B3F308F91F6C9DFA0008FCAB /* shreyareddy.jpg */,
+				B3F308FA1F6C9DFA0008FCAB /* shubhamgoenka.jpg */,
+				B3F308FB1F6C9DFA0008FCAB /* sumukhshivakumar.png */,
+				B3F308FC1F6C9DFA0008FCAB /* tarunkhasnavis.png */,
+				B3F308FD1F6C9DFA0008FCAB /* victorsun.jpg */,
+				B3F308FE1F6C9DFA0008FCAB /* vidyaravikumar.jpg */,
+				B3F308FF1F6C9DFA0008FCAB /* wilburshi.jpg */,
+				B3F309001F6C9DFA0008FCAB /* younglin.jpg */,
+				B3F309011F6C9DFA0008FCAB /* zachgovani.png */,
+			);
+			name = memberPhotos;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B3F3089D1F6C96950008FCAB /* MDB Trivia */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F308C61F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB Trivia" */;
+			buildPhases = (
+				B3F3089A1F6C96950008FCAB /* Sources */,
+				B3F3089B1F6C96950008FCAB /* Frameworks */,
+				B3F3089C1F6C96950008FCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "MDB Trivia";
+			productName = "MDB Trivia";
+			productReference = B3F3089E1F6C96950008FCAB /* MDB Trivia.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B3F308B11F6C96950008FCAB /* MDB TriviaTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F308C91F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB TriviaTests" */;
+			buildPhases = (
+				B3F308AE1F6C96950008FCAB /* Sources */,
+				B3F308AF1F6C96950008FCAB /* Frameworks */,
+				B3F308B01F6C96950008FCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F308B41F6C96950008FCAB /* PBXTargetDependency */,
+			);
+			name = "MDB TriviaTests";
+			productName = "MDB TriviaTests";
+			productReference = B3F308B21F6C96950008FCAB /* MDB TriviaTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B3F308BC1F6C96950008FCAB /* MDB TriviaUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B3F308CC1F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB TriviaUITests" */;
+			buildPhases = (
+				B3F308B91F6C96950008FCAB /* Sources */,
+				B3F308BA1F6C96950008FCAB /* Frameworks */,
+				B3F308BB1F6C96950008FCAB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B3F308BF1F6C96950008FCAB /* PBXTargetDependency */,
+			);
+			name = "MDB TriviaUITests";
+			productName = "MDB TriviaUITests";
+			productReference = B3F308BD1F6C96950008FCAB /* MDB TriviaUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B3F308961F6C96950008FCAB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = MDB;
+				TargetAttributes = {
+					B3F3089D1F6C96950008FCAB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+					};
+					B3F308B11F6C96950008FCAB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B3F3089D1F6C96950008FCAB;
+					};
+					B3F308BC1F6C96950008FCAB = {
+						CreatedOnToolsVersion = 8.3.3;
+						ProvisioningStyle = Automatic;
+						TestTargetID = B3F3089D1F6C96950008FCAB;
+					};
+				};
+			};
+			buildConfigurationList = B3F308991F6C96950008FCAB /* Build configuration list for PBXProject "MDB Trivia" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B3F308951F6C96950008FCAB;
+			productRefGroup = B3F3089F1F6C96950008FCAB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B3F3089D1F6C96950008FCAB /* MDB Trivia */,
+				B3F308B11F6C96950008FCAB /* MDB TriviaTests */,
+				B3F308BC1F6C96950008FCAB /* MDB TriviaUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B3F3089C1F6C96950008FCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F309131F6C9DFA0008FCAB /* jaredgutierrez.jpg in Resources */,
+				B3F309171F6C9DFA0008FCAB /* justinkim.jpg in Resources */,
+				B3F309211F6C9DFA0008FCAB /* rochelleshen.png in Resources */,
+				B3F309151F6C9DFA0008FCAB /* jessicachen.jpg in Resources */,
+				B3F308AC1F6C96950008FCAB /* LaunchScreen.storyboard in Resources */,
+				B3F309121F6C9DFA0008FCAB /* erickong.png in Resources */,
+				B3F3090D1F6C9DFA0008FCAB /* codyhsieh.png in Resources */,
+				B3F309261F6C9DFA0008FCAB /* shivkushwah.png in Resources */,
+				B3F309231F6C9DFA0008FCAB /* sarahtang.png in Resources */,
+				B3F3092F1F6C9DFA0008FCAB /* zachgovani.png in Resources */,
+				B3F309141F6C9DFA0008FCAB /* jeffreyzhang.png in Resources */,
+				B3F309081F6C9DFA0008FCAB /* ashwinvaidyanathan.jpg in Resources */,
+				B3F3091B1F6C9DFA0008FCAB /* leonkwak.png in Resources */,
+				B3F3092B1F6C9DFA0008FCAB /* victorsun.jpg in Resources */,
+				B3F309101F6C9DFA0008FCAB /* eliothan.jpg in Resources */,
+				B3F309221F6C9DFA0008FCAB /* sahillamba.png in Resources */,
+				B3F309071F6C9DFA0008FCAB /* aneeshjindal.jpg in Resources */,
+				B3F3092E1F6C9DFA0008FCAB /* younglin.jpg in Resources */,
+				B3F3092A1F6C9DFA0008FCAB /* tarunkhasnavis.png in Resources */,
+				B3F3090C1F6C9DFA0008FCAB /* candiceye.jpg in Resources */,
+				B3F3091E1F6C9DFA0008FCAB /* muditmittal.jpg in Resources */,
+				B3F3090E1F6C9DFA0008FCAB /* danielandrews.png in Resources */,
+				B3F3090B1F6C9DFA0008FCAB /* borisyue.png in Resources */,
+				B3F3092D1F6C9DFA0008FCAB /* wilburshi.jpg in Resources */,
+				B3F309181F6C9DFA0008FCAB /* kevinjiang.jpg in Resources */,
+				B3F3092C1F6C9DFA0008FCAB /* vidyaravikumar.jpg in Resources */,
+				B3F3091D1F6C9DFA0008FCAB /* mohitkatyal.png in Resources */,
+				B3F3090F1F6C9DFA0008FCAB /* edwardliu.jpg in Resources */,
+				B3F308A91F6C96950008FCAB /* Assets.xcassets in Resources */,
+				B3F309041F6C9DFA0008FCAB /* adhirajdatar.png in Resources */,
+				B3F309061F6C9DFA0008FCAB /* amyshen.png in Resources */,
+				B3F309111F6C9DFA0008FCAB /* emaanhariri.jpg in Resources */,
+				B3F3091A1F6C9DFA0008FCAB /* kristinho.jpg in Resources */,
+				B3F309291F6C9DFA0008FCAB /* sumukhshivakumar.png in Resources */,
+				B3F309281F6C9DFA0008FCAB /* shubhamgoenka.jpg in Resources */,
+				B3F309241F6C9DFA0008FCAB /* sayanpaul.jpg in Resources */,
+				B3F309031F6C9DFA0008FCAB /* abhinavkoppu.jpg in Resources */,
+				B3F308A71F6C96950008FCAB /* Main.storyboard in Resources */,
+				B3F3091F1F6C9DFA0008FCAB /* peterschafhalter.jpg in Resources */,
+				B3F309051F6C9DFA0008FCAB /* akkshaykhoslaa.png in Resources */,
+				B3F309161F6C9DFA0008FCAB /* julialuo.png in Resources */,
+				B3F309021F6C9DFA0008FCAB /* aayushtyagi.jpg in Resources */,
+				B3F309091F6C9DFA0008FCAB /* bengoldberg.jpg in Resources */,
+				B3F309251F6C9DFA0008FCAB /* shariewang.jpg in Resources */,
+				B3F309191F6C9DFA0008FCAB /* krishnanrajiyah.jpg in Resources */,
+				B3F3090A1F6C9DFA0008FCAB /* billylu.jpg in Resources */,
+				B3F309201F6C9DFA0008FCAB /* radhikadhomse.png in Resources */,
+				B3F309271F6C9DFA0008FCAB /* shreyareddy.jpg in Resources */,
+				B3F3091C1F6C9DFA0008FCAB /* leviwalsh.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308B01F6C96950008FCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308BB1F6C96950008FCAB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B3F3089A1F6C96950008FCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F308D21F6C99AE0008FCAB /* Question.swift in Sources */,
+				B3F308A41F6C96950008FCAB /* ViewController.swift in Sources */,
+				B3F308A21F6C96950008FCAB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308AE1F6C96950008FCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F308B71F6C96950008FCAB /* MDB_TriviaTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B3F308B91F6C96950008FCAB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B3F308C21F6C96950008FCAB /* MDB_TriviaUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B3F308B41F6C96950008FCAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F3089D1F6C96950008FCAB /* MDB Trivia */;
+			targetProxy = B3F308B31F6C96950008FCAB /* PBXContainerItemProxy */;
+		};
+		B3F308BF1F6C96950008FCAB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B3F3089D1F6C96950008FCAB /* MDB Trivia */;
+			targetProxy = B3F308BE1F6C96950008FCAB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		B3F308A51F6C96950008FCAB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3F308A61F6C96950008FCAB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		B3F308AA1F6C96950008FCAB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B3F308AB1F6C96950008FCAB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		B3F308C41F6C96950008FCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B3F308C51F6C96950008FCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B3F308C71F6C96950008FCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MDB Trivia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		B3F308C81F6C96950008FCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "MDB Trivia/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-Trivia";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		B3F308CA1F6C96950008FCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "MDB TriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDB Trivia.app/MDB Trivia";
+			};
+			name = Debug;
+		};
+		B3F308CB1F6C96950008FCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "MDB TriviaTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-TriviaTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MDB Trivia.app/MDB Trivia";
+			};
+			name = Release;
+		};
+		B3F308CD1F6C96950008FCAB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "MDB TriviaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MDB Trivia";
+			};
+			name = Debug;
+		};
+		B3F308CE1F6C96950008FCAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "MDB TriviaUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "MDB.MDB-TriviaUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "MDB Trivia";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B3F308991F6C96950008FCAB /* Build configuration list for PBXProject "MDB Trivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F308C41F6C96950008FCAB /* Debug */,
+				B3F308C51F6C96950008FCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B3F308C61F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB Trivia" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F308C71F6C96950008FCAB /* Debug */,
+				B3F308C81F6C96950008FCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3F308C91F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB TriviaTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F308CA1F6C96950008FCAB /* Debug */,
+				B3F308CB1F6C96950008FCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		B3F308CC1F6C96950008FCAB /* Build configuration list for PBXNativeTarget "MDB TriviaUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B3F308CD1F6C96950008FCAB /* Debug */,
+				B3F308CE1F6C96950008FCAB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B3F308961F6C96950008FCAB /* Project object */;
+}
